@@ -43,4 +43,4 @@ Las especificaciones de los ejes son únicamente las relacionadas con el materia
 
 Por último, se precisa conocer el material para las chavetas. Si el usuario conoce el material, debe introducir el valor de la resistencia de fluencia. En caso contrario, se ofrece una lista de materiales.
 
-La herramienta muestra los resultados obtenidos para el diseño de cada uno de los elementos que forman el sistema de transmisión en diferentes figuras y finaliza la ejecución del programa. Además, estas figuras se guardan en pdf dentro de la carpeta con los archivos del programa.
+La herramienta muestra los resultados obtenidos para el diseño de cada uno de los elementos que forman el sistema de transmisión en diferentes figuras y finaliza la ejecución del programa. Además, estas figuras se guardan en pdf dentro de la misma carpeta que contiene los archivos del programa.
