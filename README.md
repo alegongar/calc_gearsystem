@@ -23,6 +23,7 @@ Aceptadas las instrucciones anteriores, se muestra una segunda ventana donde se 
 - Dimensión Y de la caja (mm).
 - Altura máxima Z de la caja (mm).
 - Distancia entre ejes (mm).
+
 En cuanto a las especificaciones de los elementos mecánicos del sistema, se requieren otra serie de parámetros. Para los engranajes se solicita:
 - Fuente de potencia.
 - Máquina impulsada.
