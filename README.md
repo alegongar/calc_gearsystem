@@ -6,7 +6,8 @@ Este repositorio contiene todo el código y los archivos necesarios para ejecuta
 1. Descargar este repositorio en su espacio de trabajo.
 2. Instalar el entorno de cálculo MATLAB.
 3. Ejecutar el fichero [TRANSMISION.m](https://github.com/alegongar/calc_gearsystem/blob/master/TRANSMISION.m).
-## Interfaz de usuarioPetición al usuario de una serie de especificaciones de diseño del sistema de transmisión deseado.
+## Interfaz de usuario
+Petición al usuario de una serie de especificaciones de diseño del sistema de transmisión deseado.
 Primero aparece una ventana de diálogo donde se indican los datos mínimos de diseño que el usuario deberá introducir en la siguiente ventana. Los datos mínimos son:
 1. La potencia a transmisitir.
 2. La relación de transmisión y una de las velocidades (entrada o salida), o las dos velocidades requeridas.
