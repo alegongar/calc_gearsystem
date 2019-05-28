@@ -13,6 +13,7 @@ Primero aparece una ventana de diálogo donde se indican los datos mínimos de d
 3. La dimensión de la caja (X) perpendicular a los ejes o la distancia entre ejes.
 4. La dimensión mínima de la caja (Y) en la dirección de los ejes.
 5. El sentido de giro de los ejes de entrada y salida.
+
 Aceptadas las instrucciones anteriores, se muestra una segunda ventana donde se deben introducir las especificaciones técnicas de diseño para el sistema de transmisión, como son:
 - Potencia a transmitir (kW).
 - Relación de transmisión.
@@ -33,7 +34,11 @@ En cuanto a las especificaciones de los elementos mecánicos del sistema, se req
 - Resistencia a la fatiga por flexión.
 - Coeficiente elástico.
 - Resistencia a la fatiga superficial.
+
 Las tres últimas especificaciones sólo se deben rellenar si el usuario ha elegido previamente un material para los engranajes. En caso contrario, se puede seleccionar un material de la siguiente lista que ofrece el programa.
+
 Las especificaciones de los ejes son únicamente las relacionadas con el material. Si el usuario ha seleccionado un material previamente, debe conocer e introducir la resistencia a la rotura, la resistencia de fluencia y el tipo de laminado. En caso contrario, dispone de una lista de materiales para seleccionar el que desee.
+
 Por último, se precisa conocer el material para las chavetas. Si el usuario conoce el material, debe introducir el valor de la resistencia de fluencia. En caso contrario, se ofrece una lista de materiales.
+
 La herramienta muestra los resultados obtenidos para el diseño de cada uno de los elementos que forman el sistema de transmisión en diferentes figuras y finaliza la ejecución del programa. Además, estas figuras se guardan en pdf dentro de la carpeta con los archivos del programa.
