@@ -5,7 +5,8 @@ Este repositorio contiene todo el código y los archivos necesarios para ejecuta
 ## Instrucciones
 1. Descargar este repositorio en su espacio de trabajo.
 2. Ejecutar el fichero [TRANSMISION.m](https://github.com/alegongar/calc_gearsystem/blob/master/TRANSMISION.m).
-**Note**: Se requiere disponer de [MATLAB](https://es.mathworks.com/downloads/).
+
+**Requisito**: [MATLAB](https://es.mathworks.com/downloads/).
 ## Interfaz de usuario
 Petición al usuario de una serie de especificaciones de diseño del sistema de transmisión deseado.
 
