@@ -18,9 +18,9 @@ prompt1 = {'Potencia a transmitir (kW):','Relación de transmisión:',...
     'Altura máxima (Z) de la caja (mm):','Distancia entre ejes (mm):'};
 title1 = 'Especificaciones del diseño';
 dims1 = [1 60];
-%definput1 = {'0.1','','2295','300','0','300','500','300',''};               %Datos ejemplo caja reductora 2
+definput1 = {'0.1','','2295','300','0','300','500','300',''};               %Datos ejemplo caja reductora 2
 %definput1 = {'0.1','','2295','32','1','300','500','300',''};                %Datos prueba tren
-definput1 = {'1','0.6','1000','','1','','150','','100'};                    %Datos ejemplo caja reductora 1
+%definput1 = {'1','0.6','1000','','1','','150','','100'};                    %Datos ejemplo caja reductora 1
 %definput1 = {'1','','1000','600','1','300','150','300',''};                 %Datos prueba transmisión simple
 answer1 = inputdlg(prompt1,title1,dims1,definput1);
 
@@ -595,13 +595,15 @@ while datos==1
         end
         %Ángulo de presión
         phi(1:pares)=20*pi/180;
-        %Comprobar que el ángulo no es tan pequeño como para producir
-        %interferencia
-        for i_inter=1:pares
+        if pares>1
+            %Comprobar que el ángulo no es tan pequeño como para producir
+            %interferencia
             for i_inter=1:pares
-                N_conducidas(i_inter)=((((Conductoras(i_inter))^2)*((sin(phi(i_inter)))^2)-4)/(4-2*(Conductoras(i_inter))*(sin(phi(i_inter)))^2));
-                if Conducidas(i_inter)>N_conducidas(i_inter)
-                    phi(i_inter)=phi(i_inter)+(pi/180);
+                for i_inter=1:pares
+                    N_conducidas(i_inter)=((((Conductoras(i_inter))^2)*((sin(phi(i_inter)))^2)-4)/(4-2*(Conductoras(i_inter))*(sin(phi(i_inter)))^2));
+                    if Conducidas(i_inter)>N_conducidas(i_inter)
+                        phi(i_inter)=phi(i_inter)+(pi/180);
+                    end
                 end
             end
         end
