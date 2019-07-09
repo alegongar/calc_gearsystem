@@ -32,8 +32,8 @@ function [d_C_final,d_G1_final,d_J1_final,d_D_final] = CalculaEjes_Intermedios(Y
     Mj=sqrt((Mfxy_J^2)+(Mfxz_J^2));
 
     %Concentradores de tensiones
-    KfF=1.2;
-    KfT=1.3;
+    KfF=2;
+    KfT=3;
 
     %PUNTO C (entrada eje)
     %Cortante

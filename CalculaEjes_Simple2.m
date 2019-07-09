@@ -23,8 +23,8 @@ function [d_A_final,d_E2_final,d_B_final] = CalculaEjes_Simple2(Y_simple,Fr,Ft,T
     Me=sqrt((Mfxy^2)+(Mfxz^2));
 
     %Concentradores de tensiones
-    KfF=1.2;
-    KfT=1.3;
+    KfF=2;
+    KfT=3;
 
     %PUNTO A (entrada eje)
     %Cortante

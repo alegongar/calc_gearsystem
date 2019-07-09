@@ -497,7 +497,7 @@ while datos==1
     end
     %Decidir si los engranes serán exteriores o interiores, incluyendo el
     %signo en la relación de transmisión
-    if giro==0                                                              %Si se desea que los ejes de entrada y salida giren en el mismo sentido
+    if giro==0 & engrane==1                                                 %Si se desea que los ejes de entrada y salida giren en el mismo sentido
         if (mod(pares,2))==0                                                %Si el número de pares de dientes es par
             pares_EXT=pares;
             pares_INT=0;
@@ -512,7 +512,7 @@ while datos==1
             f49=msgbox('Al ser un sistema con un único par de ruedas, debe rellenar el sentido de giro con un 1.','Error','error');
             break;
         end
-    elseif giro==1                                                          %Si se desea que los ejes de entrada y salida giren en sentido contrario
+    elseif giro==1 & engrane==1                                             %Si se desea que los ejes de entrada y salida giren en sentido contrario
         if (mod(pares,2))~=0
             pares_EXT=pares;
             pares_INT=0;
@@ -524,6 +524,16 @@ while datos==1
             message4=sprintf('Se debe disponer de %d engrane/s exterior/es y %d interior/es debido al sentido de giro introducido.',pares_EXT,pares_INT);
             f34=msgbox(message4,'Engranajes','warn');
         end
+    elseif giro==0 & engrane==0
+        pares_EXT=pares;
+        pares_INT=0;
+        message10=sprintf('Se debe disponer de %d engrane/s exterior/es debido al sentido de giro introducido.',pares_EXT);
+        f50=msgbox(message10,'Engranajes','warn');
+    elseif giro==1 & engrane==0
+        pares_EXT=pares-1;
+        pares_INT=1;
+        message11=sprintf('Se debe disponer de %d engrane/s exterior/es y %d interior/es debido al sentido de giro introducido.',pares_EXT,pares_INT);
+        f51=msgbox(message11,'Engranajes','warn');
     end
     if pares_EXT>0
         for i_pares=1:pares_EXT
